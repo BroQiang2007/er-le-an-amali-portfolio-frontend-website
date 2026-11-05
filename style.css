@@ -202,10 +202,14 @@ header {
   box-shadow: 0 6px 24px rgba(29, 78, 216, 0.5);
 }
 
-.hero-avatar {
-  display: flex;
-  justify-content: center;
-  position: relative;
+.header-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-crimson-bright);
+  margin-right: 8px;
+  vertical-align: middle;
 }
 
 .avatar-frame {
