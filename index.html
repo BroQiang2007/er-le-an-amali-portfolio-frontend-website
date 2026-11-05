@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Utama | Personal Portfolio</title>
+  <meta name="description" content="Portfolio peribadi pelajar Multimedia, ADTEC JTM Kampus Nibong Tebal.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- HEADER (same on all pages) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">NAMA ANDA</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-utama" aria-label="Buka menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav class="site-nav" id="menu-utama" aria-label="Menu utama">
+        <ul>
+          <li><a href="index.html" aria-current="page">Utama</a></li>
+          <li><a href="tentang.html">Tentang Saya</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="hubungi.html">Hubungi Saya</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="kandungan">
+
+    <!-- SECTION 01: PENGENALAN DIRI -->
+    <section class="hero" id="pengenalan-diri" aria-labelledby="tajuk-hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="label">01 PENGENALAN DIRI</p>
+          <h1 id="tajuk-hero">Hai, saya NAMA ANDA</h1>
+          <p class="subtitle">Pelajar Multimedia &amp; Pereka Kreatif</p>
+          <p>Saya pelajar Sijil Multimedia di ADTEC JTM Kampus Nibong Tebal. Saya gemar menghasilkan reka bentuk grafik, video dan laman web yang kemas serta mudah difahami. Saya sentiasa belajar kemahiran baharu untuk menghasilkan karya yang lebih baik.</p>
+          <a class="btn" href="#hasil-kerja">Lihat Hasil Kerja</a>
+        </div>
+        <div class="hero-image img-box" data-fallback="images/profile.jpg">
+          <img src="images/profile.jpg" alt="Gambar profil NAMA ANDA" width="480" height="560">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: KEMAHIRAN -->
+    <section class="section alt" id="kemahiran" aria-labelledby="tajuk-kemahiran">
+      <div class="container">
+        <p class="label">02 KEMAHIRAN</p>
+        <h2 id="tajuk-kemahiran">Kemahiran Saya</h2>
+        <div class="grid-3">
+          <article class="card skill">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.3-.5-.8-.5-1.2 0-1.1.9-2 2-2h2.4A3.6 3.6 0 0 0 21 11c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7" r="1"/></svg>
+            <h3>Reka Bentuk Grafik</h3>
+            <p>Mahir menggunakan Adobe Photoshop dan Illustrator untuk menghasilkan bahan visual kreatif seperti poster dan grafik digital.</p>
+          </article>
+          <article class="card skill">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9.5v5l4.5-2.5z"/></svg>
+            <h3>Penyuntingan Video</h3>
+            <p>Berpengalaman menggunakan Adobe Premiere Pro, After Effects dan CapCut untuk menghasilkan serta menyunting kandungan video.</p>
+          </article>
+          <article class="card skill">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 6l-3 12"/></svg>
+            <h3>Pembangunan Web</h3>
+            <p>Mempunyai pengetahuan asas HTML, CSS, JavaScript, WordPress dan Elementor untuk membangunkan laman web responsif.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: HASIL KERJA PILIHAN -->
+    <section class="section" id="hasil-kerja" aria-labelledby="tajuk-hasil">
+      <div class="container">
+        <p class="label">03 HASIL KERJA PILIHAN</p>
+        <h2 id="tajuk-hasil">Hasil Kerja Pilihan</h2>
+        <div class="grid-3">
+          <article class="card project">
+            <div class="img-box ratio" data-fallback="images/project1.jpg">
+              <img src="images/project1.jpg" alt="Hasil projek reka bentuk poster digital" width="600" height="400" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Reka Bentuk Poster</h3>
+              <p>Projek reka bentuk poster digital menggunakan Adobe Photoshop dan Illustrator dengan fokus pada warna, tipografi dan komposisi visual.</p>
+            </div>
+          </article>
+          <article class="card project">
+            <div class="img-box ratio" data-fallback="images/project2.jpg">
+              <img src="images/project2.jpg" alt="Hasil projek produksi dan penyuntingan video" width="600" height="400" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Produksi dan Penyuntingan Video</h3>
+              <p>Projek penyuntingan video menggunakan Adobe Premiere Pro dan After Effects untuk menghasilkan kandungan multimedia yang kreatif.</p>
+            </div>
+          </article>
+          <article class="card project">
+            <div class="img-box ratio" data-fallback="images/project3.jpg">
+              <img src="images/project3.jpg" alt="Hasil projek pembangunan laman web responsif" width="600" height="400" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Pembangunan Laman Web</h3>
+              <p>Projek pembangunan laman web responsif menggunakan HTML, CSS dan JavaScript dengan reka bentuk yang mesra pengguna.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: HUBUNGI SAYA -->
+    <section class="section alt contact" id="hubungi" aria-labelledby="tajuk-hubungi">
+      <div class="container">
+        <p class="label">04 HUBUNGI SAYA</p>
+        <h2 id="tajuk-hubungi">Jom Berhubung</h2>
+        <p>Berminat dengan hasil kerja saya atau mahu berbincang tentang projek? Hubungi saya melalui e-mel.</p>
+        <p class="email">E-mel: <a href="mailto:emel.anda@example.com">emel.anda@example.com</a></p>
+        <a class="btn" href="mailto:emel.anda@example.com">E-mel Saya</a>
+      </div>
+    </section>
+
+  </main>
+  <!-- FOOTER (same on all pages) -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="tahun">2026</span> NAMA ANDA. Hak Cipta Terpelihara.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
