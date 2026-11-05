@@ -149,3 +149,27 @@ p { margin: 0 0 1em; }
   height: 100%;
   object-fit: contain;
 }
+
+document.querySelectorAll(".hover-video").forEach((video) => {
+  const canHover = window.matchMedia("(hover: hover) and (pointer: fine)");
+
+  video.addEventListener("mouseenter", () => {
+    if (canHover.matches) {
+      video.play().catch(() => {});
+    }
+  });
+
+  video.addEventListener("mouseleave", () => {
+    if (canHover.matches) video.pause();
+  });
+
+  video.addEventListener("click", () => {
+    if (!canHover.matches) {
+      if (video.paused) {
+        video.play().catch(() => {});
+      } else {
+        video.pause();
+      }
+    }
+  });
+});
