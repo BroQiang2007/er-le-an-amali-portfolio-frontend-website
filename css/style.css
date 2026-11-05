@@ -106,3 +106,32 @@ p { margin: 0 0 1em; }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+.img-box {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+  background: #f3f4f6;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* 普通橫圖 */
+.img-box.ratio {
+  aspect-ratio: 4 / 3;
+}
+
+/* 豎屏海報 */
+.img-box.portrait {
+  aspect-ratio: 3 / 4;
+}
+
+/* 豎屏海報不要裁切 */
+.img-box.portrait img {
+  object-fit: contain;
+  background: #ffffff;
+}
