@@ -177,8 +177,3 @@ p { margin: 0 0 1em; }
 .sound-btn:hover {
   background: #1D4ED8;
 }
-
-/* 個人照片四個角都變圓潤 */
-#pengenalan img {
-    border-radius: 16px !important;
-}
