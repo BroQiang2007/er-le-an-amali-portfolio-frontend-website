@@ -149,3 +149,31 @@ p { margin: 0 0 1em; }
   height: 100%;
   object-fit: contain;
 }
+
+/* 影片容器 */
+.video-box {
+  position: relative;
+}
+
+/* 聲音控制按鈕 */
+.sound-btn {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  z-index: 10;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(23, 32, 51, 0.85);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sound-btn:hover {
+  background: #1D4ED8;
+}
