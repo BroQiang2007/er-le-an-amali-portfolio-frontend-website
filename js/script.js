@@ -55,3 +55,22 @@ document.querySelectorAll(".hover-video").forEach((video) => {
     }
   });
 });
+
+document.querySelectorAll(".video-box").forEach((box) => {
+  const video = box.querySelector("video");
+  const soundBtn = box.querySelector(".sound-btn");
+
+  if (!video || !soundBtn) return;
+
+  soundBtn.addEventListener("click", (event) => {
+    event.stopPropagation();
+
+    video.muted = !video.muted;
+
+    soundBtn.textContent = video.muted ? "🔇" : "🔊";
+    soundBtn.setAttribute(
+      "aria-label",
+      video.muted ? "Hidupkan bunyi" : "Matikan bunyi"
+    );
+  });
+});
