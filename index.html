@@ -4,12 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Utama | Portfolio Peribadi</title>
-  <div class="hero-avatar">
-  <div class="avatar-frame">
-    <img src="profile.jpg" alt="Gambar Profil ER LE AN">
-  </div>
-</div>
+  <!-- 瀏覽器分頁小圖標 (Favicon) -->
+  <link rel="icon" href="Pictures/ProfilePicture.jpg" type="image/jpeg">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* 頂部導航列小頭像樣式 */
+    .header-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--accent-crimson-bright, #e5383b);
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+  </style>
 </head>
 <body>
 
@@ -17,9 +26,10 @@
   <header>
     <div class="container nav-wrap">
       <a href="index.html" class="logo">
-  <img src="profile.jpg" alt="Avatar" class="header-avatar">
-  ER LE AN
-</a>
+        <!-- 頂部導航列頭像 -->
+        <img src="profile.jpg" alt="Avatar" class="header-avatar">
+        ER LE AN
+      </a>
       <button class="menu-toggle" id="menuToggle" aria-label="Menu">
         <span></span>
         <span></span>
@@ -46,7 +56,8 @@
       </div>
       <div class="hero-avatar">
         <div class="avatar-frame">
-          <img src="Pictures/ProfilePicture.jpg" alt="Gambar Profil ER LE AN">
+          <!-- 首頁主要個人頭像 -->
+          <img src="profile.jpg" alt="Gambar Profil ER LE AN">
         </div>
       </div>
     </div>
@@ -117,27 +128,4 @@
   <!-- 04 Hubungi Saya -->
   <section class="section">
     <div class="container">
-      <span class="section-label">04 Hubungi Saya</span>
-      <div class="contact-card">
-        <div class="contact-text">
-          <h2>Mari Bekerjasama</h2>
-          <p>Terbuka untuk sebarang projek reka bentuk multimedia, laman web, atau kolaborasi kreatif.</p>
-          <span class="contact-email">broqiangstudio@gmail.com</span>
-        </div>
-        <div>
-          <a href="mailto:broqiangstudio@gmail.com" class="btn-primary">E-mel Saya</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>Portfolio ER LE AN &copy; 2026 Hak Cipta Terpelihara.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+      <span class
