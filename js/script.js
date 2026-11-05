@@ -30,3 +30,28 @@ document.querySelectorAll('.img-box img').forEach(function (img) {
 // 3. Footer year updates automatically
 var year = document.getElementById('tahun');
 if (year) year.textContent = new Date().getFullYear();
+
+// 4. Video Player
+document.querySelectorAll(".hover-video").forEach((video) => {
+  const canHover = window.matchMedia("(hover: hover) and (pointer: fine)");
+
+  video.addEventListener("mouseenter", () => {
+    if (canHover.matches) {
+      video.play().catch(() => {});
+    }
+  });
+
+  video.addEventListener("mouseleave", () => {
+    if (canHover.matches) video.pause();
+  });
+
+  video.addEventListener("click", () => {
+    if (!canHover.matches) {
+      if (video.paused) {
+        video.play().catch(() => {});
+      } else {
+        video.pause();
+      }
+    }
+  });
+});
