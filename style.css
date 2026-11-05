@@ -1,10 +1,13 @@
 :root {
+  /* Lampiran B 色彩與字型規範 */
   --font-base: Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --color-text-main: #172033;
   --color-btn-blue: #1D4ED8;
   --color-btn-blue-hover: #1e40af;
   --color-sec-card: #F3F4F6;
   --color-white: #FFFFFF;
+
+  /* 設計師黑紅質感環境配色 */
   --bg-deep-black: #0b090a;
   --bg-dark-card: #16161a;
   --accent-crimson: #990000;
@@ -65,15 +68,17 @@ header {
   letter-spacing: -0.5px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
-.logo-dot {
-  width: 9px;
-  height: 9px;
-  background-color: var(--accent-crimson-bright);
+/* 頂部導航列頭像樣式 */
+.header-avatar {
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
-  box-shadow: 0 0 10px var(--accent-crimson-bright);
+  object-fit: cover;
+  border: 2px solid var(--accent-crimson-bright);
+  box-shadow: 0 0 10px rgba(229, 56, 59, 0.4);
 }
 
 .nav-links {
@@ -202,14 +207,10 @@ header {
   box-shadow: 0 6px 24px rgba(29, 78, 216, 0.5);
 }
 
-.header-avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--accent-crimson-bright);
-  margin-right: 8px;
-  vertical-align: middle;
+.hero-avatar {
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .avatar-frame {
@@ -239,6 +240,7 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 /* 3-Column Grids */
