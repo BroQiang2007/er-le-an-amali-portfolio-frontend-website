@@ -137,7 +137,7 @@ p { margin: 0 0 1em; }
 @media (hover: hover) and (pointer: fine) {
   .hero-image:hover img { transform: scale(1.025); }
   .project .img-box:not(.video-box) img { transition: transform .6s cubic-bezier(.2,.8,.2,1); }
-  .project:hover .img-box:not(.video-box):not(.portrait) img { transform: scale(1.035); }
+  .project:hover .img-box:not(.video-box) img { transform: scale(1.035); }
 }
 /* Only hide elements if JS successfully enables intersection observation. */
 @media (prefers-reduced-motion: no-preference) {
